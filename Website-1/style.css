@@ -1,0 +1,281 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900);
+
+
+:root {
+    /* Space 2xs: 9px → 10px */
+    --space-2xs: clamp(0.5625rem, 0.5408rem + 0.1087vw, 0.625rem);
+  
+    /* Space xs: 14px → 15px */
+    --space-xs: clamp(0.875rem, 0.8533rem + 0.1087vw, 0.9375rem);
+  
+    /* Space s: 18px → 20px */
+    --space-s: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+  
+    /* Space m: 27px → 30px */
+    --space-m: clamp(1.6875rem, 1.6223rem + 0.3261vw, 1.875rem);
+  
+    /* Space l: 36px → 40px */
+    --space-l: clamp(2.25rem, 2.163rem + 0.4348vw, 2.5rem);
+  
+    /* Space xl: 54px → 60px */
+    --space-xl: clamp(3.375rem, 3.2446rem + 0.6522vw, 3.75rem);
+  
+    /* Space 2xl: 72px → 80px */
+    --space-2xl: clamp(4.5rem, 4.3261rem + 0.8696vw, 5rem);
+  
+    /* Space 3xl: 108px → 120px */
+    --space-3xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+  
+    /* Space 4xl: 108px → 120px */
+    --space-4xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+  
+    /* Space 5xl: 108px → 120px */
+    --space-5xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+  
+    /* Space 6xl: 108px → 120px */
+    --space-6xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+  
+    /* Space 7xl: 108px → 120px */
+    --space-7xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+    --space-8xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+    --space-9xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+    --space-10xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+  
+  
+    /* One-up pairs */
+    /* Space 2xs-xs: 9px → 15px */
+    --space-2xs-xs: clamp(0.5625rem, 0.4321rem + 0.6522vw, 0.9375rem);
+  
+    /* Space xs-s: 14px → 20px */
+    --space-xs-s: clamp(0.875rem, 0.7446rem + 0.6522vw, 1.25rem);
+  
+    /* Space s-m: 18px → 30px */
+    --space-s-m: clamp(1.125rem, 0.8641rem + 1.3043vw, 1.875rem);
+  
+    /* Space m-l: 27px → 40px */
+    --space-m-l: clamp(1.6875rem, 1.4049rem + 1.413vw, 2.5rem);
+  
+    /* Space l-xl: 36px → 60px */
+    --space-l-xl: clamp(2.25rem, 1.7283rem + 2.6087vw, 3.75rem);
+  
+    /* Space xl-2xl: 54px → 80px */
+    --space-xl-2xl: clamp(3.375rem, 2.8098rem + 2.8261vw, 5rem);
+  
+    /* Space 2xl-3xl: 72px → 120px */
+    --space-2xl-3xl: clamp(4.5rem, 3.4565rem + 5.2174vw, 7.5rem);
+  
+    /* Space 3xl-4xl: 108px → 120px */
+    --space-3xl-4xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+  
+    /* Space 4xl-5xl: 108px → 120px */
+    --space-4xl-5xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+  
+    /* Space 5xl-6xl: 108px → 120px */
+    --space-5xl-6xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+  
+    /* Space 6xl-7xl: 108px → 120px */
+    --space-6xl-7xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+  
+    /* Custom pairs */
+    /* Space s-l: 18px → 40px */
+    --space-s-l: clamp(1.125rem, 0.6467rem + 2.3913vw, 2.5rem);
+
+
+     /* Step -2: 12.50px → 12.80px */
+  --step--2: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
+
+  /* Step -1: 15.00px → 16.00px */
+  --step--1: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
+
+  /* Step 0: 18.00px → 20.00px */
+  --step-0: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+
+  /* Step 1: 21.60px → 25.00px */
+  --step-1: clamp(1.35rem, 1.2761rem + 0.3696vw, 1.5625rem);
+
+  /* Step 2: 25.92px → 31.25px */
+  --step-2: clamp(1.62rem, 1.5041rem + 0.5793vw, 1.9531rem);
+
+  /* Step 3: 31.10px → 39.06px */
+  --step-3: clamp(1.9438rem, 1.7707rem + 0.8652vw, 2.4413rem);
+
+  /* Step 4: 37.32px → 48.83px */
+  --step-4: clamp(2.3325rem, 2.0823rem + 1.2511vw, 3.0519rem);
+
+  /* Step 5: 44.79px → 61.04px */
+  --step-5: clamp(2.7994rem, 2.4461rem + 1.7663vw, 3.815rem);
+
+  /* Step 6: 53.75px → 76.29px */
+  --step-6: clamp(3.3594rem, 2.8694rem + 2.45vw, 4.7681rem);
+
+  /* Step 7: 64.50px → 95.37px */
+  --step-7: clamp(4.0313rem, 3.3602rem + 3.3554vw, 5.9606rem);
+
+  /* Step 8: 77.40px → 119.21px */
+  --step-8: clamp(4.8375rem, 3.9286rem + 4.5446vw, 7.4506rem);
+
+  /* Step 9: 92.88px → 149.01px */
+  --step-9: clamp(5.805rem, 4.5848rem + 6.1011vw, 9.3131rem);
+
+  /* Step 10: 111.45px → 186.26px */
+  --step-10: clamp(6.9656rem, 5.3393rem + 8.1315vw, 11.6413rem);
+
+    --background-color: #EFEAE3;
+    --black: #0B0500;
+    --border-color: rgba(0, 0, 0, 0.396);
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.main{
+    position: relative;
+    z-index: 10;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--background-color);
+    font-family: 'poppins';
+    
+}
+
+
+#page-1{
+    width: 100%;
+    min-height: 100vh;    
+    position: relative;
+    padding: 0 var(--space-l);
+    overflow: hidden;
+}
+
+nav{
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-m) 0;
+    padding-bottom: 0;
+
+    & img{
+        width: 11rem;
+    }
+
+    & #nav-right{
+        display: flex;
+        gap: var(--space-m);
+
+        & h4{
+            position: relative;
+            padding: var(--space-2xs) var(--space-s);
+            border: 1px solid var(--border-color);
+            border-radius: 3rem;
+            overflow: hidden;
+        }
+
+        & h4::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: var(--black);
+            top: 100%;
+            left: 0;
+            border-radius: 50%;
+            transition: all .3s ease-in-out;
+            
+        }
+
+        & h4:hover::after{
+            top: 0;
+            border-radius: 0;
+        }
+
+        & h4 a{
+            position: relative;
+            font-size: var(--step--1);
+            color: var(--black);
+            z-index: 9;
+            transition: all .3s ease;
+        }
+
+        & h4:hover a{
+            color: white;
+        }
+    }
+}
+
+
+#hero{
+    width: 100%;
+    height: 75vh;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: var(--space-2xl);
+    position: relative;
+
+    & h1{
+        width: 50%;
+        font-size: var(--step-10);
+        text-align: right;
+        line-height: 15vh;
+        z-index: 1;
+
+        
+    }
+
+    & h3{
+        font-size: var(--step-2);
+        line-height: 3vh;
+        width: 30%;
+    }
+
+   
+}
+
+#shape1{
+    position: absolute;
+   
+    bottom: -32rem;
+    right: -6rem;
+    width: 50rem;
+    height: 50rem;
+    z-index: -1;
+    background-color: orangered;
+    border-radius: 50%;
+    filter: blur(20px); 
+    animation: svg1 5s ease-in-out infinite alternate ; 
+}
+
+@keyframes svg1{
+    0%{
+        transform: skew(-10deg) rotate(10deg);
+    }
+
+    50%{
+        transform: skew(3deg) rotate(60deg);
+    }
+    100%{
+        transform: skew(-10deg) rotate(5deg);
+    }
+}
+
+
+#video1{
+    padding-top: var(--space-xl);
+    width: 100%;
+    & video{
+        width: 100%;
+        border-radius: 2rem;
+      
+    }
+}
