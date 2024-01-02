@@ -292,7 +292,7 @@ nav{
 }
 
 #moving-text{
-    /* overflow-x: auto; */
+    overflow-x: hidden;
     margin-top: var(--space-2xl);
     white-space: nowrap;
     & h1{
@@ -328,16 +328,15 @@ nav{
 
 #page-2-bottom{
     height: 80vh;
-    margin-top: var(--space-3xl);
+    margin-top: var(--space-6xl);
     padding: 0 var(--space-3xl);
     display: flex;
     gap: var(--space-l);
 
     & h1{
-        font-size: var(--step-6);
+        font-size: 4rem;
         line-height: 100%;
         width: 70%;
-        /* font-size: var(--step-5); */
         padding-right: var(--space-4xl);
     }
 }
@@ -360,3 +359,65 @@ nav{
         text-align: left;
     }
 }
+
+#featured-projects{
+    margin-top: var(--space-l);
+    padding: 0 var(--space-l);
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+    font-size: var(--step-0);
+
+    & p{
+        position: relative;
+    }
+
+    & p::before{
+        content: 'hh';
+        left: 0;
+        top: 0;
+        position: absolute;
+        border-radius: 1rem;
+        background-color: orangered;
+        width: 2rem;
+        height: 1rem;
+    }
+}
+
+#featured-projects p::before{
+ 
+}
+
+#page-3{
+    min-height: 100vh;
+
+}
+
+.projects{
+    padding: 1rem var(--space-l);
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+
+
+    & h1{
+        position: relative;
+        z-index: 9;
+        font-size: var(--step-5);
+    }
+
+
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    position: absolute;
+    background-color: #FF9831;
+    transition: all .3s ease;
+}
+
+.projects:hover .overlay{
+    top: 0;
+ }
