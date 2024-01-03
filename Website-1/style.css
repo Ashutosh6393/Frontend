@@ -168,7 +168,7 @@ nav{
         width: 11rem;
     }
 
-    & #nav-right{
+    & #nav-right, .but{
         display: flex;
         gap: var(--space-m);
 
@@ -253,19 +253,19 @@ nav{
     background-color: orangered;
     border-radius: 50%;
     filter: blur(20px); 
-    animation: svg1 5s ease-in-out infinite alternate ; 
+    animation: svg1 3s ease-in-out infinite alternate ; 
 }
 
 @keyframes svg1{
     0%{
-        transform: skew(-10deg) rotate(10deg);
+        transform: skew(-10deg) rotate(0deg);
     }
 
     50%{
-        transform: skew(3deg) rotate(60deg);
+        transform: skew(3deg) ;
     }
     100%{
-        transform: skew(-10deg) rotate(5deg);
+        transform: skew(-10deg) rotate(360deg);
     }
 }
 
@@ -303,6 +303,7 @@ nav{
         display: inline-block;
         white-space: nowrap;
         animation: move 10s linear  infinite  ;
+        
 
     }
 
@@ -383,10 +384,6 @@ nav{
     }
 }
 
-#featured-projects p::before{
- 
-}
-
 #page-3{
     min-height: 100vh;
 
@@ -420,4 +417,17 @@ nav{
 
 .projects:hover .overlay{
     top: 0;
+ }
+
+ #fixed-image{
+    position: fixed;
+    border-radius: 2rem;
+    z-index: 99;
+    width: 30rem;
+    height: 35rem;
+    top: 30vh;
+    left: 50vw;
+    display: none;
+    background-size: cover;
+    background-repeat: no-repeat;
  }
