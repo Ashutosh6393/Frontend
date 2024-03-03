@@ -475,3 +475,27 @@ nav{
     background-size: cover;
 }
 
+#parterns{
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.partner{
+    border-left: 2px solid var(--border-color);
+    padding-left: 1rem;
+    margin-right: 1rem;
+    padding-right: 1rem;
+   
+
+    & h2{
+        font-size: var(--step-3);
+        padding-bottom: 2rem;
+        
+    }
+
+    & p{
+
+    }
+}
+
