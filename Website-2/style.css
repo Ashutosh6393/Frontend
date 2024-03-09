@@ -6,11 +6,12 @@
   font-family: rj;
   src: url(./assets/Rejouice-Headline.ttf);
 }
+@import "node_modules/locomotive-scroll/dist/locomotive-scroll";
 
+/* lenis custom css starts*/
 html.lenis {
   height: auto;
 }
-
 .lenis.lenis-smooth {
   scroll-behavior: auto !important;
 }
@@ -27,6 +28,8 @@ html.lenis {
   pointer-events: none;
 }
 
+/* lenis custom css ends */
+
 * {
   margin: 0;
   padding: 0;
@@ -38,13 +41,11 @@ body {
   height: 100vh;
   width: 100%;
   font-family: rf;
-  background-color: beige;
 }
 
 #page1 {
   width: 100%;
   height: 100vh;
-  background-color: #dadada;
 }
 
 #page1 video {
@@ -57,7 +58,6 @@ body {
 #page1-content {
   height: 100%;
   width: 100%;
-  /* background: #00000050; */
   position: relative;
   z-index: 9;
   color: #fff;
@@ -106,7 +106,6 @@ nav h4 {
   justify-content: center;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  
 }
 
 #cursor h5 {
@@ -144,7 +143,6 @@ nav h4 {
 .elem p {
   font-size: 4.2vw;
   position: relative;
-  /* margin-inline: 2.4vw; */
 }
 
 #page3 {
@@ -216,58 +214,51 @@ nav h4 {
   font-size: 3vw;
   left: 50%;
   transform: translateX(-50%);
-  
 }
 
-.video-gallery-item img{
+.video-gallery-item img {
   z-index: 10;
   position: absolute;
   height: 100%;
   width: 100%;
-
 }
 
-.video-gallery-item video{
+.video-gallery-item video {
   z-index: 9;
   position: absolute;
   height: 100%;
   object-fit: cover;
   width: 100%;
-  transition: all .5s ease-in;
+  transition: all 0.5s ease-in;
   opacity: 0;
 }
 
-.video-gallery-item:hover video{
+.video-gallery-item:hover video {
   opacity: 1;
   z-index: 11;
-
 }
 
-#page4, #page6{
+#page4,
+#page6 {
   padding: 2.4vw;
-
 }
 
-#page4-top{
+#page4-top {
   margin-top: 10vw;
   padding-bottom: 1vw;
-
 }
 
-.page4-underline{
-  /* width: 50%; */
+.page4-underline {
   margin-bottom: 3vw;
 }
 
-
-#page5{
+#page5 {
   margin-top: 5vw;
   position: relative;
   width: 100%;
   height: 100vh;
-  
 }
-#page5-content{
+#page5-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,16 +267,15 @@ nav h4 {
   height: 100%;
 }
 
-#page5-content video{
-
+#page5-content video {
   width: 70%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
-.cursor2{
-  opacity: 0;;
+.cursor2 {
+  opacity: 0;
   height: 6vw;
   width: 6vw;
   background-color: black;
@@ -299,65 +289,113 @@ nav h4 {
   align-items: center;
   justify-content: center;
   transform: translate(-50%, -50%);
-  transition: .1s;
+  transition: 0.1s;
   pointer-events: none;
 }
 
-#loader{
+#loader {
   height: 100%;
   width: 100%;
   position: fixed;
-  top:0;
+  top: 0;
   background-color: black;
   z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white ;
+  color: white;
   gap: 10px;
-
+  overflow: hidden;
 }
 
-#loader h3{
+#loader h3 {
   font-size: 2vw;
 }
 
-.first-svg{
-
+.first-svg {
   width: 40%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
-.seats{
+.seats {
   color: white;
   z-index: 7;
 }
 
-.seats h3{
+.seats h3 {
   text-align: center;
   font-size: 3vw;
 }
-.seats h4{
+.seats h4 {
   font-size: 1.5vw;
 }
 
-#page6{
+#page6 {
   margin-top: 4vw;
   width: 100%;
   height: 100vh;
+  z-index: 99;
+  /* background-color: #b49292; */
 }
 
-.page6-underline{
+.page6-underline {
   margin-bottom: 2vw;
 }
 
-footer{
-  height: 100vh;
+footer {
+  padding-top: 5vw;
+  /* height: 70vh; */
   width: 100%;
   background-color: black;
-  color: white
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+}
 
+.footer-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-top h1 {
+  font-size: 5vw;
+}
+
+
+
+.footer-top button {
+  font-size: 3vw;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 1rem;
+}
+ 
+/* .footer */
+.footer-bottom h1 {
+  text-align: center;
+  overflow: hidden;
+  line-height: 25vw;
+  position: relative;
+  margin-bottom: 0;
+}
+.footer-bottom h1 span {
+  transform: translateY(-500px);
+  opacity: 0;
+  padding: 1vw;
+  font-weight: 400;
+  font-family: rj;
+  font-size: 24vw;
+  transition: ease;
+  display: inline-block;
+  margin-bottom: 0;
 }
